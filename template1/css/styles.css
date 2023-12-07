@@ -39,6 +39,9 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-shadow: 3px 3px 5px #194165, -5px -5px 7px #04111a;
+    border-radius: 10%;
+    margin: 15px;
 }
 
 .logo {
@@ -53,6 +56,9 @@ body {
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
+    padding: 10px 10px;
+    border-radius: 10%;
+    box-shadow: -3px -3px 5px #194165, 5px 5px 7px #04111a;
 }
 
 .navbar a:hover,
@@ -80,6 +86,9 @@ section {
 
 .home-content {
     max-width: 60rem;
+    box-shadow: 3px 3px 5px #194165, -5px -5px 7px #04111a;
+    border-radius: 10px;
+    padding: 25px;
 } 
 
 .home-content h1 {
@@ -130,6 +139,7 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    box-shadow: 3px 3px 5px var(--main-color);
 }
 
 .btn-box .btn:hover {
@@ -162,5 +172,55 @@ section {
 }
 
 .btn-box .btn:hover::before {
+    width: 100%;
+}
+
+/* Social Media Icons */
+
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px #194165, -5px -5px 7px #04111a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
     width: 100%;
 }
