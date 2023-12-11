@@ -82,6 +82,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
+    /* background: url(/template1/img/WIN_20231028_07_00_49_Pro2.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
 
 .home-content {
@@ -224,3 +228,26 @@ section {
 .home-sci a:hover::before {
     width: 100%;
 }
+
+/*  */
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
+
+/***************************************************
+                About Page
+28:51
+****************************************************/
+
