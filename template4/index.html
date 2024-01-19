@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/template4/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1><b>William<br> Watson</b></h1>
+        <span>title of page</span>
+    </div>
+
+    <div class="pages" id="divOne">
+        <div class="col-12 row page">
+            <div class="def">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+    
+            <div class="syntax">
+                <h1><u><i>Title</i></u></h1>
+                <p><i>string.()</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="divTwo">
+        <div class="col-12 row two page">
+            <div class="def">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+    
+            <div class="syntax">
+                <h1><u><i>Job Title</i></u></h1>
+                <p><i>string.()</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="divThree">
+        <div class="col-12 row three page">
+            <div class="def">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+    
+            <div class="syntax">
+                <h1><u><i>Three</i></u></h1>
+                <p><i>string.()</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="divFour">
+        <div class="col-12 row four page">
+            <div class="def">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+    
+            <div class="syntax">
+                <h1><u><i>Four</i></u></h1>
+                <p><i>string.()</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="divFive">
+        <div class="col-12 row five page">
+            <div class="def">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+    
+            <div class="syntax">
+                <h1><u><i>Five</i></u></h1>
+                <p><i>string.()</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-12 footer2">
+            <!-- Add a data attribute to each link with the corresponding text -->
+            <a href="javascript:void(0);" onclick="showDiv('divOne', 'One')">One</a>
+            <a href="javascript:void(0);" onclick="showDiv('divTwo', 'Two')">Two</a>
+            <a href="javascript:void(0);" onclick="showDiv('divThree', 'Three')">Three</a>
+            <a href="javascript:void(0);" onclick="showDiv('divFour', 'Four')">Four</a>
+            <a href="javascript:void(0);" onclick="showDiv('divFive', 'Five')">Five</a>
+        </div>
+    </div>
+
+    <script>
+        function showDiv(divId, text) {
+            // Get all divs with class 'pages'
+            var divs = document.querySelectorAll('.pages');
+
+            // Loop through all the divs
+            for (var i = 0; i < divs.length; i++) {
+                // Hide all divs
+                divs[i].style.display = 'none';
+            }
+
+            // Show the div with the specified id
+            document.getElementById(divId).style.display = 'block';
+
+            // Set the span's text content to the clicked text
+            document.querySelector('.header span').textContent = text;
+        }
+
+        // Call showDiv function to initially show divOne and set the span's text to "One"
+        showDiv('divOne', 'One');
+    </script>
+</body>
+</html>
